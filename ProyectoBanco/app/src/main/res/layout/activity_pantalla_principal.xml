@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PantallaPrincipal">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <ImageButton
+        android:id="@+id/button_seguridad"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="4dp"
+        android:background="@null"
+        android:onClick="opcion"
+        android:scaleType="centerCrop"
+        android:tag="cambiarclave"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal70"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/vertical50"
+        app:layout_constraintTop_toTopOf="@+id/horizontal40"
+        app:srcCompat="@drawable/lufer_050_security" />
+
+    <ImageButton
+        android:id="@+id/button_transferencias"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@null"
+        android:onClick="opcion"
+        android:scaleType="centerCrop"
+        android:tag="transferencias"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal70"
+        app:layout_constraintEnd_toStartOf="@+id/vertical50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/horizontal40"
+        app:srcCompat="@drawable/lufer_030_exchange" />
+
+    <ImageButton
+        android:id="@+id/button_ingresos"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@null"
+        android:onClick="opcion"
+        android:scaleType="centerCrop"
+        android:tag="ingresos"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/vertical50"
+        app:layout_constraintTop_toTopOf="@+id/horizontal10"
+        app:srcCompat="@drawable/lufer_006_bar_graph" />
+
+    <ImageButton
+        android:id="@+id/button_posicionglobal"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@null"
+        android:onClick="opcion"
+        android:scaleType="centerCrop"
+        android:tag="posicionglobal"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal40"
+        app:layout_constraintEnd_toStartOf="@+id/vertical50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/horizontal10"
+        app:srcCompat="@drawable/lufer_040_hierarchical_structure" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal70"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <ImageButton
+        android:id="@+id/button_promociones"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@null"
+        android:onClick="opcion"
+        android:scaleType="centerCrop"
+        android:tag="promociones"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/vertical50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/horizontal70"
+        app:srcCompat="@drawable/lufer_002_price_tag" />
+
+    <ImageButton
+        android:id="@+id/button_cajeros"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@null"
+        android:onClick="opcion"
+        android:scaleType="centerCrop"
+        android:tag="cajeros"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/vertical50"
+        app:layout_constraintTop_toTopOf="@+id/horizontal70"
+        app:srcCompat="@drawable/lufer_046_atm_machine" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/tvnombre"
+        android:layout_width="191dp"
+        android:layout_height="21dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal10"
+        app:layout_constraintEnd_toStartOf="@+id/vertical50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
